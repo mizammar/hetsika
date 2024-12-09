@@ -11,69 +11,68 @@ body {
     overflow-x: hidden;
 }
 
+/* Styles pour la navbar */
 header {
     background-color: #212121;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
-header nav ul {
-    display: flex;
+.logo img {
+    height: 40px; /* Réduisez la hauteur selon vos besoins */
+    max-width: 150px; /* Ajustez la largeur maximale selon vos besoins */
+    width: auto;
 }
 
-header nav ul li {
+nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
     text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    color: #fff;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    background-color: #f4a261;
-    border-radius: 5px;
+nav ul li a:hover {
+    color: #f4a261; /* Couleur de survol */
 }
 
 .intro {
-    background: url('images/intro-bg.jpg') no-repeat center center/cover;
+    background: url('../images/intro-bg.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 120px 20px;
     position: relative;
 }
 
-.intro .cta-btn {
-    background-color: #f4a261;
-    color: white;
-    padding: 15px 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-top: 30px;
-    transition: 0.3s ease;
-}
-
-.intro .cta-btn:hover {
-    background-color: #e76f51;
-}
 
 .about, .services, .testimonials, .contact {
     text-align: center;
     padding: 50px 20px;
     margin-top: 30px;
+}
+
+#contact {
+    padding-bottom: 100px;
 }
 
 .about h2, .services h2, .testimonials h2, .contact h2 {
